@@ -14,7 +14,7 @@ def multiplication(a, b):
 
 def division(a, b):
     c = b / a
-    return c
+    return round(c, 9)
 
 def square(a):
     c = a * a
@@ -22,7 +22,7 @@ def square(a):
 
 def squareroot(a):
     c = math.sqrt(a)
-    return c
+    return round(c, 9)
 
 class Calculator:
     result = 0
