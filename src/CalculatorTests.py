@@ -48,7 +48,7 @@ class MyTestCase(unittest.TestCase):
     def test_squareroot(self):
         test_data = CsvReader('/src/SquareRoot.csv').data
         for row in test_data:
-            result = float(row['Result'])
+            result = round(float(row['Result']),8)
             self.assertEqual(self.calculator.sqrt(float(row['Value 1'])), result)
             self.assertEqual(self.calculator.result, result)
 
